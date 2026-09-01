@@ -334,8 +334,8 @@ res6 = morphed_faces_threshold_comparison(
     id_col='ProlificID',
     char_col='Character_num',
 )
-n6 = len(res6)
 res6 = filter_thresholds_in_range(res6)
+n6 = len(res6)
 
 
 r_stat6, p_val = st.pearsonr(res6['sex_arousal_after'], res6['threshold'])
